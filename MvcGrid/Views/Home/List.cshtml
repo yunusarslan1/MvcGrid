@@ -1,0 +1,17 @@
+﻿@model IEnumerable<MvcGrid.Models.Staff>
+@{
+    ViewBag.Title = "List";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Staff List</h2>
+
+<ul class="list-group">
+   @foreach (var item in Model)
+    {
+       <li class="list-group-item">
+           @item.FirstName
+       </li>
+    }
+</ul>
+

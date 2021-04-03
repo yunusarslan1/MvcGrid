@@ -1,0 +1,9 @@
+﻿@model MvcGrid.Models.Staff
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Başarıyla Silindi</h2>
+
+@Html.ActionLink("Listeye Dön", "List", "Grid", null, new { @class="btn btn-warning"})
